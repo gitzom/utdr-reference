@@ -42,3 +42,4 @@ Objects may or may not contain sprites and contain code. An object can have 7 di
     It runs when the object collides with (touches; it won't necessarily stop motion) a specified object. You can set it to collide with a "parent" object, and assign that as the parent to other objects, and it will still count when it collides with the "children"
 
 ### Sprites
+
