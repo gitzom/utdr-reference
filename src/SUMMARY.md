@@ -3,6 +3,8 @@
 [Introduction](README.md)
 
 # Reference Guide
+- [Shared Code](./UTDR/README.md)
+    - [Global Variables](./UTDR/GlobalVars.md)
 - [UNDERTALE](./UNDERTALE/README.md)
 - [DELTARUNE](./DELTARUNE/README.md)
     - [General](./DELTARUNE/General.md)
