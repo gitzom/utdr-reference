@@ -38,10 +38,12 @@ jobs:
           crate: mdbook-callouts
           git: "https://github.com/ToolmanP/rs-mdbook-callouts"
           commit: "83898e352a961fc65044e04c864141c8b5481722"
+          
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v2
         with:
-          mdbook-version: 'latest'
+          mdbook-version: '0.4.10'
+          # mdbook-version: 'latest'
       - run: mdbook build
       
       - name: Setup Pages
