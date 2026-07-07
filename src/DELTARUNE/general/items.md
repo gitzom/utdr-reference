@@ -14,8 +14,6 @@
 Items can be used during or outside of battle to various effects from healing to reviving to even tension
 > [!NOTE]
 > This is based on Chapter 2's code, reminder to go back and verify if this functions in all versions
-> Also don't forget to add a section on light world items
-> And one on KEY Items
 
 ## Item Structure
 
@@ -46,6 +44,17 @@ View `gml_GlobalScript_scr_iteminfo` to compare
 Key Items do not appear in your invetory normally and as such have their own section
 
 Key Items structure is much simpler, only containing a description. In `scr_itemuse` their ID's are offset by 300.
+
+## Light World Items
+Light World Items are also quite simple, all scripts pertaining to them are prefixed with `scr_litem`
+
+`gml_GlobalScript_scr_litemname` contains the names of Light World Items
+
+`gml_GlobalScript_scr_litemdesc` contains the descriptions of Light World Items
+
+`gml_GlobalScript_scr_litemuseb` handles using of Light World Items
+
+`gml_GlobalScript_scr_litemget` is the recommended way to give a player a Light World item
 
 ## Related Variables
 
