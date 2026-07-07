@@ -92,11 +92,11 @@ global.spellname[j][i] = spellname;
 ```
 
 ### scr_spellget
+> [!INFO] Only works in Chapter 2+
 The recommended way to give a spell to a party member.
 - arg0 is the party member
 - arg1 is the ID of the spell to be given
 
-Only works in Chapter 2+
 
 #### Example Usage
 
