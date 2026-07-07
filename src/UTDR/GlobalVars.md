@@ -21,6 +21,11 @@ global.flag is an `array` used for pretty much anything that can happen. From de
 
 The following data is sourced from [tomat.dev](https://tomat.dev/undertale/flags)
 
+Volatile values are flags that are changed often at runtime, so not easy to manually set. 
+Bool values are true/false conditions. 
+Range values can be any number. 
+Counter values increment as the condition is met.
+
 | Flag     | Name                              | Type             | Comments                                                                                                                                                                                                                                                                                |
 |----------|-----------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1..3     | unused                            |                  |                                                                                                                                                                                                                                                                                         |
