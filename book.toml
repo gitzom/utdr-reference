@@ -6,3 +6,4 @@ src = "src"
 title = "UT/DR Reference"
 
 [preprocessor.callouts]
+[preprocessor.icons]
