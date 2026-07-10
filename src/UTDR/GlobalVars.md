@@ -18,20 +18,6 @@ if (global.flag[23])
     global.flag[920]++
 ```
 
-## global.interact
-Usage varies between games, please reference their specific articles as linked belowed
-
-[global.interact in Undertale](../DELTARUNE/general/GlobalVars.md)
-
-[global.interact in Deltarune](../UNDERTALE/GlobalVars.md)
-
-### Example Usage
-
-```js
-if (global.flag[23])
-    global.flag[920]++
-```
-
 <details>
 <summary>All Flags in UNDERTALE</summary>
 
@@ -8885,3 +8871,17 @@ Map values map to certain specific values as outlined in their description.
   </tbody>
 </table>
 </details>
+
+## global.interact
+Usage varies between games, please reference their specific articles as linked belowed
+
+[global.interact in UNDERTALE](../DELTARUNE/general/GlobalVars.md)
+
+[global.interact in DELTARUNE](../UNDERTALE/GlobalVars.md)
+
+### Example Usage
+
+```js
+if (global.interact == 2 && dancing)
+    global.flag[204]++
+```
