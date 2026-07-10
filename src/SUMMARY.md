@@ -9,7 +9,6 @@
     - [Sharing Mods](./Tools/SharingMods/README.md)
         - [Delta Patcher](./Tools/SharingMods/DeltaPatcher.md)
         - [CSX Scripts](./Tools/SharingMods/CSX_Scripts.md)
-    - [XDelta](./Tools/XDeltas.md)
 - [Shared Code](./UTDR/README.md)
     - [Global Variables](./UTDR/GlobalVars.md)
 - [UNDERTALE](./UNDERTALE/README.md)
