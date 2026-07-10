@@ -129,7 +129,7 @@
       <td>BetterHeal</td>
       <td>A healing spell that has grown#with practice and confidence.</td>
       <td>Heal#ally</td>
-      <td>999 ( actual TP amount 399.6%) <br></td>
+      <td>It depends. <br></td>
       <td>1 - Selects an ally</td>
     </tr>
     <tr>
