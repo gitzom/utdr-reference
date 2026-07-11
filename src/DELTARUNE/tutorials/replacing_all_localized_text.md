@@ -33,7 +33,7 @@ On top of that this script only runs if `is_english()` is false.
 
 ---
 
-Instead of trying to use `scr_84_get_lang_string()` try using `msgsetloc()` as shown below
+Instead of trying to use `scr_84_get_lang_string()` try using `msgsetloc()` as shown below:
 
 ```js
 function c_msgsetloc(arg0, arg1, arg2)
