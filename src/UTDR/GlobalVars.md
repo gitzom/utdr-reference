@@ -8873,7 +8873,7 @@ Map values map to certain specific values as outlined in their description.
 </details>
 
 ## global.interact
-Usage varies between games, please reference their specific articles as linked belowed
+Usage varies between games but generally is used to determine player state, please reference their specific articles as linked belowed
 
 [global.interact in UNDERTALE](../DELTARUNE/general/GlobalVars.md)
 
@@ -8885,3 +8885,61 @@ Usage varies between games, please reference their specific articles as linked b
 if (global.interact == 2 && dancing)
     global.flag[204]++
 ```
+
+## global.typer
+global.typer is used to determine who is currently speaking 
+
+Below are the tables for their uses in both UNDERTALE and DELTARUNE
+
+<details>
+<summary>All Typers in UNDERTALE</summary>
+</details>
+
+<details>
+<summary>All Typers in DELTARUNE</summary>
+
+`global.typer` | Character
+--- | ---
+2 | Silent in the Light World.
+4 | Default while fighting.
+5 | Default in the Light World.
+6 | Default in the Dark World.
+7 | Toriel
+10 | Susie in the Light World.
+12 | Noelle in the Light World.
+13 | Berdly in the Light World.
+14 | Sans.
+17 | Undyne.
+18 | Asgore
+20 | Alphys
+21 | Temmie
+30 | Susie in the Dark World.
+31 | Ralsei
+32 | Lancer
+33 | King
+35 | Jevil
+36 | King before face reveal.
+40 | Silent in the Dark World.
+45 | Ralsei while fighting.
+46 | Lancer while fighting.
+47 | Susie while fighting.
+48 | King while fighting.
+50 | Enemy balloon.
+55 | Rudy
+56 | Noelle in the Dark World.
+57 | Berdly in the Dark World.
+58 | Queen
+59 | Noelle while fighting.
+62 | Queen alt.
+66 | Spamton while not fighting.
+67 | Spamton NEO.
+68 | Spamton while fighting.
+77 | Berdly while fighting.
+82 | Jackenstein (cute)
+83 | Jackenstein
+84 | Tenna
+85 | Gerson
+87 | Carol
+666 | Mysterious Voice
+
+</details>
