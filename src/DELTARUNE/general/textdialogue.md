@@ -1,5 +1,25 @@
 # Text & Dialogue
 
+## Lang Files
+
+All of DELTARUNE Chapter 1's dialogue is stored in the Chapter 1 `lang` folder, which is located in the same directory as where the [Chapter 1 WAD file resides](../../Tools/GameMaker/WADFiles.md#deltarune). The English and Japanese translations are named `lang_en.json` and `lang_ja.json` respectively. 
+
+The beginning of Chapter 1's `lang_en.json` is shown below:
+
+```js
+{
+  "date": "1540902565549",
+  "DEVICE_CONTACT_slash_Step_0_gml_5_0": " ^9 ^8 %",
+  "DEVICE_CONTACT_slash_Step_0_gml_6_0": " ARE YOU^6& THERE^6?\\M1 ^6 %",
+  "DEVICE_CONTACT_slash_Step_0_gml_7_0": "^6 \\M0ARE WE^6&CONNECTED^6?\\M1 ^6 ^6 %%",
+  ...
+}
+``` 
+
+Each JSON file contains a `date` key whose value is a timestamp encoded in unix time. Each subsequent key is a dialogue ID (e.g. `DEVICE_CONTACT_slash_Step_0_gml_5_0`) with the appropriate translation as the corresponding value. The dialogue IDs are the same between the English and Japanese JSONs, making it easy for the game to find the correct text translation just from the text's dialogue ID.
+
+Starting from Chapter 2, DELTARUNE's English dialogue no longer exists in a `lang_en.json` file but is instead embedded in the code of the WAD file. However, Japanese dialogue still remains in a `lang_ja.json` file.  
+
 ## Control Characters
 
 Symbol | Description
