@@ -16,17 +16,8 @@ global.interact is used inside Deltarune to determine the current state the game
 
 
 ## global.cinstance[]
-global.cinstance, standing for Character Instance, is an array containing the idThe following is the usage for global.cinstance in DELTARUNE
- The index is basically WHICH like in the list of the objects which index it is in that list and then the
+global.cinstance, standing for Character Instance, is an array containing the ids of the characters currently following the player in the overworld. It has a length of 3. The objects that the ids point to are instances of [obj_caterpillarchara](actors_and_caterpillars).
 
- you can do .name and .x and .y to the things returned by cinstance[n]
-
- in terms of the value of cinstance[n] itself i think its 0 for kris, 1 for susie and i assume 2 for ralsei and 3 for noelle? IDK though
+The order of which characters are at which indices changes based on the order in which they are following you. For example, in much of Chapter 1, the object representing Ralsei is in cinstance[0], since he is your only follower.
 
 
- It seems that each cinstance[0], [1], and [2] contain objects that represent the people following yo[u right now. For example, in much of chapter 1, the object representing Ralsei is in cinstance[0].
-`global.cinstance` | Value at Game Start
---- | ---
-`[0]` | 4854845464869464
-`[1]` | 48548454648694644
-`[2]` | 48548454648694649.
