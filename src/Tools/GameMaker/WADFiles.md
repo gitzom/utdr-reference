@@ -34,16 +34,36 @@ macOS | `~/Library/Application Support/Steam/steamapps/common/DELTARUNEdemo/DELT
 
 ## DELTARUNE
 
-Instead of having all of DELTARUNE's logic in one WAD file, the purchasable release of DELTARUNE contains a Chapter Select WAD file and then individual WAD files for each chapter. The Chapter Select WAD file can be found in the following directories:
+Instead of having all of DELTARUNE's logic in one WAD file, the purchasable release of DELTARUNE contains a Chapter Select WAD file (found in the "root" directory) and then individual WAD files for each chapter. The default DELTARUNE root directory is as follows:
 
-Operating System | Default DELTARUNE Chapter Select WAD File Path
+Operating System | Default DELTARUNE Root Directory
 --- | ---
-Windows | `C:\Program Files (x86)\Steam\steamapps\common\DELTARUNE\data.win`
-macOS | `~/Library/Application Support/Steam/steamapps/common/DELTARUNE/DELTARUNE.app/Contents/Resources/game.ios`
+Windows | `C:\Program Files (x86)\Steam\steamapps\common\DELTARUNE\`
+macOS | `~/Library/Application Support/Steam/steamapps/common/DELTARUNE/DELTARUNE.app/Contents/Resources/`
 
-The directory that has the Chapter Select WAD file also contains folders for each chapter, with each folder containing the WAD file for that chapter. The folders are named as follows, with `X` representing the chapter number:
+The root directory also contains folders for each chapter, with each folder containing the respective WAD file for that chapter. The folders are named as follows, with `X` representing the chapter number:
 
 Operating System | Default DELTARUNE Chapter Folder Name
 --- | ---
 Windows | `chapterX_windows`
 macOS | `chapterX_mac`
+
+For example, a Windows installation with the first five chapters installed might look like the following (with irrelevant files and folders discarded):
+
+```text
+.
+.
+└── DELTARUNE/
+    ├── chapter1_windows/
+    │   └── data.win
+    ├── chapter2_windows/
+    │   └── data.win
+    ├── chapter3_windows/
+    │   └── data.win
+    ├── chapter4_windows/
+    │   └── data.win
+    ├── chapter5_windows/
+    │   └── data.win
+    ├── data.win
+    └── DELTARUNE.exe
+```

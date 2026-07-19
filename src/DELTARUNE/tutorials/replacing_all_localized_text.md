@@ -1,5 +1,11 @@
 # Replacing Localized Text
 
+To replace Japanese text or Chapter 1 English text, edit the [JSON lang files](../general/textdialogue.md#lang-files).
+
+To replace Chapter 2+ English text, replace the dialogue in the WAD file (usually by opening UTMT, searching for the dialogue in the code via Ctrl+Shift+F, and then replacing it).
+
+## Custom Handling
+
 You can add a custom handler for all localized text in Chapter 1 by using `gml_GlobalScript_scr_84_get_lang_string`.
 
 ```js
@@ -10,7 +16,7 @@ function scr_84_get_lang_string(arg0) {
 }
 ```
 
-In Chapter 2 onwards alongside removing the lang strings from being easily accessible the code to access them has been changed.
+In Chapter 2 onwards, alongside removing the lang strings from being easily accessible, the code to access them has been changed.
 
 ```js
 function scr_84_get_lang_string(arg0) {
@@ -33,18 +39,18 @@ On top of that this script only runs if `is_english()` is false.
 
 ---
 
-Instead of trying to use `scr_84_get_lang_string()` try using `msgsetloc()` as shown below:
+Instead of trying to use `scr_84_get_lang_string()`, try using `msgsetloc()` as shown below:
 
 ```js
-function c_msgsetloc(arg0, arg1, arg2)
+function msgsetloc(arg0, arg1, arg2)
 {
     var msg_index = arg0;
-    var english = arg1;
+    var str = arg1;
     var localized_string_id = arg2;
-    var str = english;
+    
     if (!is_english())
         str = scr_84_get_lang_string(localized_string_id);
-    // do stuff with `str`
-    c_msgset(msg_index, str);
+    
+    msgset(msg_index, str);
 }
 ```
